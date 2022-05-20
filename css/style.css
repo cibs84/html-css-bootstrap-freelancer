@@ -14,10 +14,14 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 /* COMMON */
 .ms_container {
-    width: 75%;
-    max-width: 1100px;
+    width: 65%;
+    max-width: 1170px;
     margin: 0 auto; 
 }
 
@@ -28,33 +32,27 @@ a {
 }
 
 section,
-footer {
+footer > * {
     padding: 2rem 0;
 }
 
-h2,
-.ms_star {
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.ms_star {
-}
-
 .row > div { /* .col-* */
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 }
 
 .row > div > * {
-    background-color: lightblue;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
+
+    /* TEST */
+    border: 1px solid red;
 }
 
 /* HEADER */
 header {
     height: 50px;
     background-color: #2c3e50;
-    /* color: white; */
+    color: white;
+    text-transform: uppercase;
 }
 
 header .row > div > * {
@@ -73,60 +71,75 @@ header nav .main-menu ul li {
 
 /* MAIN */
 
-/* MAIN > Section - Jumbotron */
-#ms_jumbotron {
+/* MAIN: COMMON */
+section.bg_green {
     background-color: #1abc9c;
-    text-align: center;
     color: white;
 }
 
+.section-header {   
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* MAIN > Section - Jumbotron */
+#ms_jumbotron {
+    text-align: center;
+}
+
 /* MAIN > Section - Portfolio */
-#portfolio .ms_star {
-
-}
-
-#portfolio .row > div { /* .col-* */
-
-}
-
-#portfolio .row > div .project {
+#portfolio {
 
 }
 
 /* MAIN > Section - About */
-#ms_about {
-    background-color: #1abc9c;
-    color: white;
-}
-
 #ms_about .download {
     text-align: center;
     margin-top: 1rem;
 }
 
 /* MAIN > Section - Contact Me */
-#ms_contact_me {
-   
+#ms_contact_me form {
+
+    /* TEST - Per compensare il padding degli elementi sopra. Questo non ce l'ha perchè non è stato inserito nel sistema di .row > .col. Dopo aver inserito il blocco-form di bootstrap provare a vedere se lasciarlo o rimuoverlo. */
+    padding: 0 12px;
 }
 
 #ms_contact_me form > * {
+
+    /* TEST - Dopo avere inserito il blocco-form di bootstrap, si può eliminare */
     display: block;
     width: 100%;
-}
-
-/* MAIN > Section - Info */
-#ms_info {
-    background-color: #3a546d;
 }
 
 
 /* FOOTER */
 footer {
-    background-color: #2c3e50;
     text-align: center;
     color: white;
 }
 
+#footer-top {
+    background-color: #3a546d;
+}
+
+#footer-bottom {
+    background-color: #2c3e50;    
+}
+
+
 /******************** 
     MEDIA QUERIES 
 ********************/
+
+/******** Large - ≥992px ********/
+@media screen and (min-width: 992px) {
+
+/* COMMON */
+
+.ms_container {
+    width: 75%;
+}
+
+
+}

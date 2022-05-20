@@ -19,25 +19,25 @@
     <!-- HEADER -->
     <header class="d-flex align-items-center">
         
-        <!-- Container Lg -->
-        <div class="container-lg">
-            <div class="row align-items-center">
+        <!-- Container md -->
+        <div class="container-md">
+            <div class="row align-items-center gy-4 gx-md-4">
                 
-                <!-- LEFT -->
+                <!-- Brand Column -->
                 <div class="col-6">
                     <div class="ms_logo">START BOOTSTRAP</div>
                 </div>
                 
-                <!-- RIGHT -->
+                <!-- Nav Column -->
                 <div class="col-6">
                     <nav>
                         <!-- Burger Menu -->
-                        <div class="burger-menu d-lg-none">
+                        <div class="burger-menu d-md-none">
                             <i class="fa-solid fa-bars"></i>
                         </div>
 
                         <!-- Expanded Menu  -->
-                        <div class="main-menu d-none d-lg-block">
+                        <div class="main-menu d-none d-md-block">
                             <ul>
                                 <li><a href="#">PORTFOLIO</a></li> 
                                 <li><a href="#">ABOUT</a></li> 
@@ -54,28 +54,33 @@
     <main>
         
         <!-- SECTION - Jumbotron -->
-        <section id="ms_jumbotron">
-            <h1>START BOOTSTRAP</h1>
+        <section id="ms_jumbotron" class="bg_green">
+            <div class="container">
+                <h1>START BOOTSTRAP</h1>
 
-            <div class="ms_star">STAR</div>
-
-            <div>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</div>
+                <div class="ms_star">STAR</div>
+    
+                <div>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</div>    
+            </div>
         </section>
 
         <!-- SECTION - Portfolio -->
         <section id="portfolio">
-            <h2>PORTFOLIO</h2>
-
-            <div class="ms_star">STAR</div>
-
-            <div class="container-lg">
+            <div class="container-md">
+                
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2>PORTFOLIO</h2>
+    
+                    <div class="ms_star">STAR</div>    
+                </div>
 
                 <!-- All Projects -->
-                <div class="row row-cols-lg-2 row-cols-xl-4">
+                <div class="row row-cols-md-2 row-cols-xl-4 gy-4 gx-md-4">
 
                     <!-- Project -->
                     <div class="col-12">
-                        <div class="project">
+                        <div class="card-project">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem rem fugit autem minima dolor voluptatum quibusdam voluptates exercitationem quos expedita non, suscipit culpa, maxime officia voluptate alias beatae deleniti laborum.
                             Explicabo maxime inventore quam optio repudiandae impedit, odio quidem delectus ducimus quod, nihil ea voluptas totam reprehenderit? Eaque ipsam voluptate nostrum quo inventore ratione aliquid amet. Totam iste eos ab.
                         </div>
@@ -83,7 +88,7 @@
 
                     <!-- Project -->
                     <div class="col-12">
-                        <div class="project">
+                        <div class="card-project">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem rem fugit autem minima dolor voluptatum quibusdam voluptates exercitationem quos expedita non, suscipit culpa, maxime officia voluptate alias beatae deleniti laborum.
                             Explicabo maxime inventore quam optio repudiandae impedit, odio quidem delectus ducimus quod, nihil ea voluptas totam reprehenderit? Eaque ipsam voluptate nostrum quo inventore ratione aliquid amet. Totam iste eos ab.
                         </div>
@@ -91,7 +96,7 @@
 
                     <!-- Project -->
                     <div class="col-12">
-                        <div class="project">
+                        <div class="card-project">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem rem fugit autem minima dolor voluptatum quibusdam voluptates exercitationem quos expedita non, suscipit culpa, maxime officia voluptate alias beatae deleniti laborum.
                             Explicabo maxime inventore quam optio repudiandae impedit, odio quidem delectus ducimus quod, nihil ea voluptas totam reprehenderit? Eaque ipsam voluptate nostrum quo inventore ratione aliquid amet. Totam iste eos ab.
                         </div>
@@ -99,7 +104,7 @@
 
                     <!-- Project -->
                     <div class="col-12">
-                        <div class="project">
+                        <div class="card-project">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem rem fugit autem minima dolor voluptatum quibusdam voluptates exercitationem quos expedita non, suscipit culpa, maxime officia voluptate alias beatae deleniti laborum.
                             Explicabo maxime inventore quam optio repudiandae impedit, odio quidem delectus ducimus quod, nihil ea voluptas totam reprehenderit? Eaque ipsam voluptate nostrum quo inventore ratione aliquid amet. Totam iste eos ab.
                         </div>
@@ -107,7 +112,7 @@
 
                     <!-- Project -->
                     <div class="col-12">
-                        <div class="project">
+                        <div class="card-project">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem rem fugit autem minima dolor voluptatum quibusdam voluptates exercitationem quos expedita non, suscipit culpa, maxime officia voluptate alias beatae deleniti laborum.
                             Explicabo maxime inventore quam optio repudiandae impedit, odio quidem delectus ducimus quod, nihil ea voluptas totam reprehenderit? Eaque ipsam voluptate nostrum quo inventore ratione aliquid amet. Totam iste eos ab.
                         </div>
@@ -115,7 +120,7 @@
 
                     <!-- Project -->
                     <div class="col-12">
-                        <div class="project">
+                        <div class="card-project">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem rem fugit autem minima dolor voluptatum quibusdam voluptates exercitationem quos expedita non, suscipit culpa, maxime officia voluptate alias beatae deleniti laborum.
                             Explicabo maxime inventore quam optio repudiandae impedit, odio quidem delectus ducimus quod, nihil ea voluptas totam reprehenderit? Eaque ipsam voluptate nostrum quo inventore ratione aliquid amet. Totam iste eos ab.
                         </div>
@@ -126,16 +131,19 @@
         </section>
 
         <!-- SECTION - ABOUT -->
-        <section id="ms_about">
-            <h2>ABOUT</h2>
-
-            <div class="ms_star">STAR</div>
-
+        <section id="ms_about" class="bg_green">
             <div class="ms_container">
                 <div class="container-fluid">
 
+                    <!-- Section Header -->
+                    <div class="section-header">
+                        <h2>ABOUT</h2>
+        
+                        <div class="ms_star">STAR</div>    
+                    </div>
+                    
                     <!-- Paragraphs -->
-                    <div class="row row-cols-lg-2">
+                    <div class="row row-cols-md-2 gy-4 gx-md-4">
                         <div class="col-12">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero iste ratione accusantium minus laboriosam consectetur veniam inventore qui numquam, cum asperiores! Corrupti natus modi maiores quis mollitia in autem perspiciatis.
                                 Explicabo soluta maxime qui sed ut facere omnis? Temporibus dolores consequuntur voluptate ea? Nihil necessitatibus, modi porro accusantium atque praesentium dicta deleniti et, rem autem eos ea, vitae impedit sapiente!</p>
@@ -156,11 +164,16 @@
 
         <!-- SECTION - Contact Me -->
         <section id="ms_contact_me">
-            <h2>CONTACT ME</h2>
-
-            <div class="ms_star">STAR</div>
-
             <div class="ms_container">
+                
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2>CONTACT ME</h2>
+    
+                    <div class="ms_star">STAR</div>
+                </div>
+                
+                <!-- Form -->
                 <form action="#">
                     <input type="text" placeholder="Name">
                     <input type="email" placeholder="Email Address">
@@ -171,33 +184,37 @@
             </div>
         </section>
         
-        <!-- SECTION - Info -->
-        <section id="ms_info">
-            <div class="ms_container-ft">
-                <div class="container-fluid">
-                    <div class="row row-cols-lg-3">
-                        <div class="col-12">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ex sapiente sint, porro doloremque veritatis laboriosam soluta maiores, reprehenderit minima, autem rerum expedita! Vel reprehenderit totam eius maiores et veritatis.
-                            Sit unde possimus cupiditate at debitis quasi, alias fuga non minima obcaecati quae? Quia repellendus laudantium repudiandae iste possimus vero eaque dolorum expedita eum ex! Inventore unde nesciunt assumenda corrupti?</p>
-                        </div>
-                        <div class="col-12">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ex sapiente sint, porro doloremque veritatis laboriosam soluta maiores, reprehenderit minima, autem rerum expedita! Vel reprehenderit totam eius maiores et veritatis.
-                            Sit unde possimus cupiditate at debitis quasi, alias fuga non minima obcaecati quae? Quia repellendus laudantium repudiandae iste possimus vero eaque dolorum expedita eum ex! Inventore unde nesciunt assumenda corrupti?</p>
-                        </div>
-                        <div class="col-12">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ex sapiente sint, porro doloremque veritatis laboriosam soluta maiores, reprehenderit minima, autem rerum expedita! Vel reprehenderit totam eius maiores et veritatis.
-                            Sit unde possimus cupiditate at debitis quasi, alias fuga non minima obcaecati quae? Quia repellendus laudantium repudiandae iste possimus vero eaque dolorum expedita eum ex! Inventore unde nesciunt assumenda corrupti?</p>
-                        </div>
-                    </div>
-                </div>            
-            </div>
-        </section>
-
     </main>
-
+    
     <!-- FOOTER -->
     <footer>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+        <!-- Footer Top -->
+        <div id="footer-top">
+            <div class="container">
+                <div class="row row-cols-md-3 gy-4 gx-md-4">
+                    <div class="col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ex sapiente sint, porro doloremque veritatis laboriosam soluta maiores, reprehenderit minima, autem rerum expedita! Vel reprehenderit totam eius maiores et veritatis.
+                        Sit unde possimus cupiditate at debitis quasi, alias fuga non minima obcaecati quae? Quia repellendus laudantium repudiandae iste possimus vero eaque dolorum expedita eum ex! Inventore unde nesciunt assumenda corrupti?</p>
+                    </div>
+                    <div class="col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ex sapiente sint, porro doloremque veritatis laboriosam soluta maiores, reprehenderit minima, autem rerum expedita! Vel reprehenderit totam eius maiores et veritatis.
+                        Sit unde possimus cupiditate at debitis quasi, alias fuga non minima obcaecati quae? Quia repellendus laudantium repudiandae iste possimus vero eaque dolorum expedita eum ex! Inventore unde nesciunt assumenda corrupti?</p>
+                    </div>
+                    <div class="col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ex sapiente sint, porro doloremque veritatis laboriosam soluta maiores, reprehenderit minima, autem rerum expedita! Vel reprehenderit totam eius maiores et veritatis.
+                        Sit unde possimus cupiditate at debitis quasi, alias fuga non minima obcaecati quae? Quia repellendus laudantium repudiandae iste possimus vero eaque dolorum expedita eum ex! Inventore unde nesciunt assumenda corrupti?</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div id="footer-bottom">
+            <div class="container">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+        </div>
     </footer>
 </body>
 </html>
