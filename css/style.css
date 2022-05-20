@@ -33,18 +33,7 @@ p {
 
 section,
 footer > * {
-    padding: 2rem 0;
-}
-
-.row > div { /* .col-* */
-    /* background-color: lightcoral; */
-}
-
-.row > div > * {
-    /* margin-bottom: 2rem; */
-
-    /* TEST */
-    /* border: 1px solid red; */
+    padding: 3.5rem 0;
 }
 
 /* HEADER */
@@ -81,6 +70,11 @@ header nav .main-menu ul li {
 /* MAIN */
 
 /* MAIN: COMMON */
+#ms_about,
+#ms_contact_me {
+    padding-bottom: 2rem;
+}
+
 section.bg_green {
     background-color: #1abc9c;
     color: white;
@@ -102,7 +96,7 @@ section.bg_green {
     display: inline-block;
     width: 5rem;
     height: 0.25rem;
-    background-color: white;
+    background-color: currentColor;
     vertical-align: super;
 }
 
@@ -111,6 +105,7 @@ section.bg_green {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 500;
+    padding: 2rem 0;
 }
 
 #ms_jumbotron img {
@@ -124,8 +119,8 @@ section.bg_green {
 }
 
 /* MAIN > Section - Portfolio */
-#portfolio {
-
+#portfolio .row .card-project img {
+    border-radius: 10px;
 }
 
 /* MAIN > Section - About */
@@ -172,7 +167,7 @@ footer {
 @media screen and (min-width: 768px) {
 
 /* COMMON */
-section,
+#ms_jumbotron,
 footer > * {
     padding: 4rem 0;
 }
@@ -181,16 +176,21 @@ footer > * {
 header .row .ms_brand { 
     font-size: 1.7rem;
 }
-    
 header .row .main-menu { 
     font-size: 1.1rem;
     font-weight: 500;
 }
 
+/* MAIN */
 /* MAIN: COMMON */
+section {
+    padding: 5rem 0 6rem;
+}
+    
 .ms_star::before,
 .ms_star::after {
     width: 9rem;
+    margin: 0 1rem;
 }
 
 
@@ -203,7 +203,10 @@ header .row .main-menu {
     font-size: 4rem;
 }
 
-
+/* MAIN > Section - Portfolio */
+.section-header h2 {   
+    font-size: 3.2rem;
+}
 
 }
 
