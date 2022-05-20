@@ -91,9 +91,36 @@ section.bg_green {
     margin-bottom: 1.5rem;
 }
 
+.ms_star {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.ms_star::before,
+.ms_star::after {
+    content: '';
+    display: inline-block;
+    width: 5rem;
+    height: 0.25rem;
+    background-color: white;
+    vertical-align: super;
+}
+
 /* MAIN > Section - Jumbotron */
 #ms_jumbotron {
     text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#ms_jumbotron img {
+    width: 15.5rem;
+    margin-bottom: 1rem;
+}
+
+#ms_jumbotron h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
 }
 
 /* MAIN > Section - Portfolio */
@@ -144,8 +171,13 @@ footer {
 /******** Medium - ≥768px ********/
 @media screen and (min-width: 768px) {
 
-/* HEADER */
-    
+/* COMMON */
+section,
+footer > * {
+    padding: 4rem 0;
+}
+
+/* HEADER */ 
 header .row .ms_brand { 
     font-size: 1.7rem;
 }
@@ -154,7 +186,25 @@ header .row .main-menu {
     font-size: 1.1rem;
     font-weight: 500;
 }
-    
+
+/* MAIN: COMMON */
+.ms_star::before,
+.ms_star::after {
+    width: 9rem;
+}
+
+
+/* MAIN > Section - Jumbotron */
+#ms_jumbotron {
+    font-size: 1.6rem;
+}
+
+#ms_jumbotron h1{
+    font-size: 4rem;
+}
+
+
+
 }
 
 /******** Large - ≥992px ********/
