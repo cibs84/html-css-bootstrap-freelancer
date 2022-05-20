@@ -44,19 +44,28 @@ footer > * {
     /* margin-bottom: 2rem; */
 
     /* TEST */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* HEADER */
 header {
-    height: 50px;
+    height: 100px;
     background-color: #2c3e50;
     color: white;
     text-transform: uppercase;
 }
 
-header .row > div > * {
+header .row > div > * { /* Qualsiasi sotto-elemento di .col* */
     margin-bottom: 0;
+}
+
+header .row .ms_brand { 
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+header .row .burger-menu { 
+    font-size: 1.8rem;
 }
 
 header nav {
@@ -64,7 +73,7 @@ header nav {
 }
 
 header nav .main-menu ul li {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     display: inline;
 }
 
@@ -132,6 +141,22 @@ footer {
     MEDIA QUERIES 
 ********************/
 
+/******** Medium - ≥768px ********/
+@media screen and (min-width: 768px) {
+
+/* HEADER */
+    
+header .row .ms_brand { 
+    font-size: 1.7rem;
+}
+    
+header .row .main-menu { 
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+    
+}
+
 /******** Large - ≥992px ********/
 @media screen and (min-width: 992px) {
 
@@ -140,6 +165,5 @@ footer {
 .ms_container {
     width: 75%;
 }
-
 
 }
