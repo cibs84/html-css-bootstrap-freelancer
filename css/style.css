@@ -1,4 +1,6 @@
 /* RESET */
+
+
 img {
     width: 100%;
 }
@@ -133,8 +135,32 @@ section.bg_green {
 }
 
 /* MAIN > Section - Portfolio */
+#portfolio .row .card-project {
+    display: block;
+    position: relative;
+    transition: all 0.2s;
+}
+
+#portfolio .row .card-project::after {
+    transition: all 0.2s;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 1rem solid #1abc9c;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
 #portfolio .row .card-project img {
     border-radius: 10px;
+}
+
+#portfolio .row .card-project:hover::after {
+    opacity: 1;
 }
 
 /* MAIN > Section - About */
