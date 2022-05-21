@@ -132,7 +132,7 @@
 
         </section>
 
-        <!-- SECTION - ABOUT -->
+        <!-- SECTION - About -->
         <section id="ms_about" class="bg_green">
             <div class="ms_container">
                 <div class="container-fluid">
@@ -182,13 +182,39 @@
                 </div>
                 
                 <!-- Form -->
-                <form action="#">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email Address">
-                    <input type="number" placeholder="Phone Number">
-                    <textarea placeholder="Message"></textarea>
-                    <input type="submit" value="Send">
-                </form>
+                <form>
+
+                    <!-- Name -->
+                    <div>
+                        <label for="name" class="form-label visually-hidden">Name</label>
+
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp"  placeholder="Name">
+                    </div>
+
+                    <!-- Email Address -->
+                    <div>
+                        <label for="email" class="form-label visually-hidden">Email address</label>
+
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"  placeholder="Email Address">
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div>
+                        <label for="phone-number" class="form-label visually-hidden">Phone Number</label>
+
+                        <input type="phone-number" class="form-control" id="email" aria-describedby="emailHelp"  placeholder="Phone Number">
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label for="exampleFormControlTextarea1" class="form-label visually-hidden">Message</label>
+
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-outline-light btn-lg">Send</button>
+                  </form>
             </div>
         </section>
         
