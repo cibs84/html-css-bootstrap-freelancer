@@ -186,31 +186,32 @@
                 <form>
 
                     <!-- Name -->
-                    <div>
-                        <label for="name" class="form-label visually-hidden">Name</label>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="name" placeholder="Name">
 
-                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp"  placeholder="Name">
+                        <label for="name" class="form-label">Name</label>
                     </div>
+
 
                     <!-- Email Address -->
-                    <div>
-                        <label for="email" class="form-label visually-hidden">Email address</label>
-
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"  placeholder="Email Address">
-                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"  placeholder="name@example.com">
+                        
+                        <label for="email" class="form-label">Email address</label>
+                      </div>
 
                     <!-- Phone Number -->
-                    <div>
-                        <label for="phone-number" class="form-label visually-hidden">Phone Number</label>
-
+                    <div class="form-floating">
                         <input type="phone-number" class="form-control" id="email" aria-describedby="emailHelp"  placeholder="Phone Number">
+                        
+                        <label for="phone-number" class="form-label">Phone Number</label>
                     </div>
 
                     <!-- Message -->
-                    <div>
-                        <label for="exampleFormControlTextarea1" class="form-label visually-hidden">Message</label>
-
+                    <div class="form-floating">
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
+
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
                     </div>
 
                     <!-- Submit Button -->

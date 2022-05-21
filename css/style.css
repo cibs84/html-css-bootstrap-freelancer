@@ -52,6 +52,14 @@ footer > * {
     font-weight: 600;
 }
 
+.form-floating > label {
+    padding-left: 0;
+}
+
+.form-floating > textarea {
+    min-height: 12rem;
+}
+
 /* HEADER */
 header {
     height: 100px;
@@ -142,26 +150,26 @@ section.bg_green {
 }
 
 #portfolio .row .card-project::after {
-    transition: all 0.2s;
     display: block;
     content: '';
     width: 100%;
     height: 100%;
-    border: 1rem solid #1abc9c;
-    border-radius: 10px;
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0;
-}
-
-#portfolio .row .card-project img {
+    border: 1rem solid #1abc9c;
     border-radius: 10px;
+    opacity: 0;
+    transition: all 0.2s;
 }
 
 #portfolio .row .card-project:hover::after {
     opacity: 1;
 }
+
+#portfolio .row .card-project img {
+    border-radius: 10px;
+}    
 
 /* MAIN > Section - About */
 #ms_about .download {
@@ -199,16 +207,12 @@ section.bg_green {
     color: black;
     font-size: 1.3rem;
     font-weight: 600;
-    padding: 1rem 0;
+    padding: 3rem 0 1.3rem;
 }
 
 #ms_contact_me form input:focus,
 #ms_contact_me form textarea:focus {
     box-shadow: none;
-}
-
-#ms_contact_me form div:first-child input{
-    padding-top: 0;
 }
 
 #ms_contact_me form button {
