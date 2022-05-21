@@ -12,6 +12,7 @@ ul {
 a {
     color: inherit;
     text-decoration: none;
+    transition: all 0.2s;
 }
 
 a:hover {
@@ -147,6 +148,10 @@ section.bg_green {
     display: block;
 }
 
+#ms_about button:hover {
+    color: #1abc9c;
+}
+
 /* MAIN > Section - Contact Me */
 #ms_contact_me form {
 
@@ -171,6 +176,11 @@ section.bg_green {
     padding: 1rem 0;
 }
 
+#ms_contact_me form input:focus,
+#ms_contact_me form textarea:focus {
+    box-shadow: none;
+}
+
 #ms_contact_me form div:first-child input{
     padding-top: 0;
 }
@@ -181,6 +191,12 @@ section.bg_green {
     width: auto;
     border-radius: 7px;
     margin-top: 1rem;
+}
+
+#ms_contact_me form button:hover {
+    background-color: transparent;
+    border-color: #1abc9c;
+    color: #1abc9c;
 }
 
 /* FOOTER */
@@ -198,6 +214,12 @@ footer {
     font-size: 1.1rem;
 }
 
+#footer-top ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 #footer-top ul li a {
     display: inline-block;
     border: 1px solid white;
@@ -208,13 +230,7 @@ footer {
     font-size: 1.3rem;
     margin: 0 0.3rem 0.6rem;
     transition: all 0.2s;
-}
-
-#footer-top ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+}    
 
 #footer-top ul li a:hover {
     background-color: white;
@@ -224,6 +240,10 @@ footer {
 
 #footer-top a.bs-link {
     color: #1abc9c;
+}
+
+#footer-top a.bs-link:hover {
+    text-decoration: underline;
 }
 
 #footer-bottom {
