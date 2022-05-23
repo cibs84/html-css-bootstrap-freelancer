@@ -193,13 +193,6 @@ section.bg_green {
     padding: 0 12px;
 }
 
-#ms_contact_me form > * {
-
-    /* TEST - Dopo avere inserito il blocco-form di bootstrap, si può eliminare */
-    display: block;
-    width: 100%;
-}
-
 #ms_contact_me form input,
 #ms_contact_me form textarea {
     border: none;
@@ -217,8 +210,6 @@ section.bg_green {
 
 #ms_contact_me form button {
     background-color: #1abc9c;
-    display: inline;
-    width: auto;
     border-radius: 7px;
     margin-top: 1rem;
 }
@@ -244,10 +235,8 @@ footer {
     font-size: 1.1rem;
 }
 
-#footer-top ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+#footer-top ul li {
+    display: inline-block;
 }
 
 #footer-top ul li a {
